@@ -1,55 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/pure-min.css">
-  <link rel="stylesheet" href="css/grids-responsive-min.css">
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-  <!-- <link rel="stylesheet" href="css/General.css"> -->
-  <link rel="stylesheet" href="css/menu.css">
-  <title>Archineering</title>
-  <script src="js/p5.js" type="text/javascript"></script>
-  <script src="js/p5.dom.js" type="text/javascript"></script>
-  <script src="Canvas/ripple.js" type="text/javascript"></script>
-  
-  <script src="js/jquery.min.js" type="text/javascript"></script>
-  <script src="js/angular.min.js" type="text/javascript"></script>
-</head>
-<body ng-app="mySite">
-  <div class="custom-wrapper pure-g" id="menu">
-    <div class="pure-u-1 pure-u-md-1-3 vertical-center">
-        <div class="pure-menu">
-            <a href="#" class="pure-menu-heading custom-brand">Chenyu Pu</a>
-            <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Chenyu Pu Design</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Scroll animation-->
+    <link rel="stylesheet" type="text/css" href="vendor/aos/aos.css">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/portfolio.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+    <!-- Header -->
+    <header class="row">
+    	<div class="col align-self-center">
+	    	<div id="HeaderSelection" class="carousel slide" data-ride="carousel">
+	    		<div class="carousel-inner">
+	    			<div class="carousel-item active">
+	    				<img class="d-block w-100" src="img/P1.jpg" alt="First Slide">
+	    			</div>
+	    			<div class="carousel-item">
+	    				<img class="d-block w-100" src="img/P2.jpg" alt="First Slide">
+	    			</div>
+	    		</div>
+	    		<a class="carousel-control-prev" href="#HeaderSelection" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#HeaderSelection" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+	    	</div>
+	    </div>
+	    <div class="col align-self-center position-absolute" style="top:30%;">
+	      <div class="container text-center my-auto">
+	        <h1 class="mb-1">Chenyu Pu Design</h1>
+	        <h3 class="mb-5">
+	          <p><large>Architecture Actuated</large></p>
+	        </h3>
+	        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Enter</a>
+	      </div>
+	    </div>
+      <div class="overlay"></div>
+    </header>
+
+    <!-- Services -->
+    <section class="content-section bg-primary text-white text-center" id="services">
+      <div class="container">
+        <div class="content-section-heading">
+          <h3 class="text-secondary mb-0">Categories</h3>
+          <h2 class="mb-5">What We Offer</h2>
         </div>
-    </div>
-    <div class="pure-u-1 pure-u-md-2-3 vertical-center">
-        <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform">
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">ARCHITECTURE</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">INTERACTIVE</a></li>
-            </ul>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-screen-smartphone"></i>
+            </span>
+            <h4>
+              <strong>Responsive</strong>
+            </h4>
+            <p class="text-faded mb-0">Looks great on any screen size!</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-pencil"></i>
+            </span>
+            <h4>
+              <strong>Redesigned</strong>
+            </h4>
+            <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-like"></i>
+            </span>
+            <h4>
+              <strong>Favorited</strong>
+            </h4>
+            <p class="text-faded mb-0">Millions of users
+              <i class="fas fa-heart"></i>
+              Start Bootstrap!</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-mustache"></i>
+            </span>
+            <h4>
+              <strong>Question</strong>
+            </h4>
+            <p class="text-faded mb-0">I mustache you a question...</p>
+          </div>
         </div>
-    </div>
-  </div>
-  <div class="pure-g container">
-    <div class="pure-u-1 pure-u-md-1-2">
-      <h1><i class="fa fa-rocket"></i>Chenyu Pu Portfolio</h1>
-      <p></p>
-      <p>By <em>Chenyu Pu</em></p>
-      <p></p>
-      <p>May 29, 2016</p>
-      <p></p>
-    </div>
-    <div class="pure-u-1 pure-u-md-1-2">
-      <p>There is a simple reason why Web Developer is such a hot job right now. Put simply, what Web Developers do is create how we experience … the web. If you proceed from the notion that every person who engages with the web would prefer a great experience, then you can say that everyone who engages with the web would prefer that a Web Developer have done a great job. Companies of course know this, so they hire Web Developers to ensure their sites provide great experiences. So, lots of websites and lots of users means lots of demand. LOTS of demand. 🔥</p>
-      <p><a href="/BStest.html">link</a></p>
-      <test-template></test-template>
-    </div>
-    <div id="ripple" class="pure-u-1">
-    </div>
-  </div>
-  <script src="js/app.js" type="text/javascript"></script>
-</body>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <ul class="list-inline mb-5">
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="#">
+              <i class="icon-social-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="#">
+              <i class="icon-social-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="#">
+              <i class="icon-social-github"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text-muted small mb-0">Copyright &copy; Your Website 2018</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Scroll animation-->
+    <script type="text/javascript" src="vendor/aos/aos.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/portfolio.js"></script>
+
+    <script>
+		  AOS.init();
+		  $('.carousel').carousel('pause')
+		</script>
+
+  </body>
+
 </html>
